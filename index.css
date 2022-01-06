@@ -1,3 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-    background-image: url(https://www.bing.com/th?id=OIP.4y1QfQfEwrqEQug7Qwf77wHaEo&w=156&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2);
+     min-height: 100vh;
+     background-size: 100vw 100vh;
+     background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../snake.jpef.jpg");
+}
+#board{
+    margin-top: 30px;
+    margin-left: 350px;
+    border: 2px solid black;
+     width: 90vmin;
+     height: 90vmin;
+     display: grid;
+     grid-template-rows: repeat(18,1fr);
+     grid-template-columns: repeat(18,1fr);
+    background: linear-gradient(rgb(213, 226, 213),rgb(252, 243, 243));
+} 
+
+.head{
+    background-color: red;
+}
+.food{
+    background-color: pink;
 }
